@@ -19,7 +19,7 @@ class Category(models.Model):
 
 
 class Todo(models.Model):
-    text = models.CharField(max_length=30)
+    title = models.CharField(max_length=30)
     state = models.BooleanField(default=False)
 
     description = models.TextField(
